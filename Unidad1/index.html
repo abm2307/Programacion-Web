@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad 1 - AA1</title>
+</head>
+<body>
+   <!-- Sección de Presentación   -->
+    <header>
+        <h1>Unidad 1 - AA1 - Programa Web  </h1>
+
+        <nav aria-label="Menú principal">
+            <ul>
+                <li><a href="#presentacion">Presentación</a></li>
+                <li><a href="#contacto">Formulario de contacto</a></li>
+                <li><a href="#informacion">Tabla de información</a></li>
+                <li><a href="#multimedia">Multimedia</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <hr>
+         <!-- Contenido principal -->
+    <main>
+
+        <!-- Sección de presentación -->
+        <section id="presentacion">
+            <h2>Sección de Presentación</h2>
+
+            <img
+                src="imagen-programacion.jpg"
+                alt="Trabajando en desarrollo de una página web"
+                width="500"
+            >
+
+            <p>
+                Esta página fue desarrollada como parte de la Unidad 1 de
+                Construcción de Interfaces Web. Su propósito es mostrar el uso de los
+                principales elementos de HTML5, como encabezados, enlaces,
+                imágenes, formularios, tablas, contenido multimedia y un
+                pie de página.
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- Formulario de contacto -->
+        <section id="contacto">
+            <h2>Formulario de contacto</h2>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Datos de contacto</legend>
+
+                    <p>
+                        <label for="nombre">Nombre:</label><br>
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            required
+                            minlength="3"
+                            maxlength="60"
+                            autocomplete="name"
+                            placeholder="Escribe tu nombre"
+                        >
+                    </p>
+
+                    <p>
+                        <label for="correo">Correo electrónico:</label><br>
+                        <input
+                            type="email"
+                            id="correo"
+                            name="correo"
+                            required
+                            autocomplete="email"
+                            placeholder="ejemplo@correo.com"
+                        >
+                    </p>
+
+                    <p>
+                        <label for="mensaje">Mensaje:</label><br>
+                        <textarea
+                            id="mensaje"
+                            name="mensaje"
+                            rows="6"
+                            cols="40"
+                            required
+                            minlength="10"
+                            maxlength="500"
+                            placeholder="Escribe tu mensaje"
+                        ></textarea>
+                    </p>
+
+                    <button type="submit">Enviar mensaje</button>
+                    <button type="reset">Limpiar formulario</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- Tabla de información -->
+        <section id="informacion">
+            <h2>Horarios de asesoría</h2>
+
+            <table border="1">
+                <caption>Horarios disponibles durante la semana</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Día</th>
+                        <th scope="col">Horario</th>
+                        <th scope="col">Tema</th>
+                        <th scope="col">Modalidad</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>10:00 a 12:00</td>
+                        <td>Introducción a HTML</td>
+                        <td>Presencial</td>
+                    </tr>
+
+                    <tr>
+                        <td>Miércoles</td>
+                        <td>16:00 a 18:00</td>
+                        <td>Formularios HTML5</td>
+                        <td>En línea</td>
+                    </tr>
+
+                    <tr>
+                        <td>Viernes</td>
+                        <td>12:00 a 14:00</td>
+                        <td>Tablas y multimedia</td>
+                        <td>Presencial</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- Sección multimedia -->
+        <section id="multimedia">
+            <h2>Video sobre HTML5</h2>
+
+            <p>
+                El siguiente video presenta una introducción al desarrollo
+                de páginas web con HTML:
+            </p>
+
+            <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/ELSm-G201Ls"
+                title="Video introductorio sobre HTML"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+            ></iframe>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2026 Unidad 1 - Construcción de Interfaces Web<br>
+            Todos los derechos reservados. 
+            <br>
+            Matricula: udx102410018<br>
+            Asesor: Katya Yarira Garduno Paz
+
+        </p>
+
+        <nav aria-label="Redes sociales">
+            <p>Síguenos en:</p>
+
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener">
+                        Facebook
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+                        Instagram
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/" target="_blank" rel="noopener">
+                        YouTube
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+
+    
+</body>
+
+</html>
