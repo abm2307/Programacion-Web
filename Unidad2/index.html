@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulación Dashboard Empresarial</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+    
+    
+</head>
+<body>
+
+    <header>
+        <h1>Dashboard Empresarial</h1>
+    </header>
+
+    <div class="container">
+
+        <div class="cards">
+
+            <div class="card ventas">
+                <h2>Ventas</h2>
+                <p>$125,000</p>
+            </div>
+
+            <div class="card inventario">
+                <h2>Inventario</h2>
+                <p>2,450 unidades</p>
+            </div>
+
+            <div class="card empleados">
+                <h2>Rendimiento</h2>
+                <p>89%</p>
+            </div>
+
+        </div>
+
+        <div class="toolbox">
+
+            <button id="btnGrafica">
+                Mostrar/Ocultar Gráfico
+            </button>
+
+            <input
+                type="text"
+                id="busqueda"
+                placeholder="Buscar métrica..."
+            >
+
+            <p id="mensajeTeclado"></p>
+
+        </div>
+
+        <div class="grafica-container">
+
+            <h2>Ventas Mensuales</h2>
+
+            <div id="grafica">
+
+                <div class="barra" data-valor="80">
+                    <span>Ene</span>
+                </div>
+
+                <div class="barra" data-valor="120">
+                    <span>Feb</span>
+                </div>
+
+                <div class="barra" data-valor="100">
+                    <span>Mar</span>
+                </div>
+
+                <div class="barra" data-valor="150">
+                    <span>Abr</span>
+                </div>
+
+                <div class="barra" data-valor="200">
+                    <span>May</span>
+                </div>
+
+            </div>
+
+            <div id="detalle"></div>
+
+        </div>
+        
+        <div class="empleados-container">
+
+         <h2>Ventas por Empleado</h2>
+
+        <table id="tablaEmpleados">
+                <thead>
+                    <tr>
+                        <th>Empleado</th>
+                        <th>Ventas</th>
+                        <th>Cumplimiento</th>
+                    </tr>
+                </thead>
+
+            <tbody>
+
+                <tr class="fila-empleado">
+                    <td>Ana López</td>
+                    <td>$45,000</td>
+                    <td>90%</td>
+                </tr>
+
+                <tr class="fila-empleado">
+                    <td>Carlos Pérez</td>
+                    <td>$38,000</td>
+                    <td>76%</td>
+                </tr>
+
+                <tr class="fila-empleado">
+                    <td>María García</td>
+                    <td>$52,000</td>
+                    <td>104%</td>
+                </tr>
+
+                <tr class="fila-empleado">
+                    <td>José Martínez</td>
+                    <td>$41,000</td>
+                    <td>82%</td>
+                </tr>
+
+                <tr class="fila-empleado">
+                    <td>Sofía Hernández</td>
+                    <td>$48,000</td>
+                    <td>96%</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <div id="detalleEmpleado">
+            Haz clic sobre un empleado para ver detalles.
+        </div>
+        </div>
+    </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+
+   <!-- Pie de página -->
+    <footer class="footer">
+        
+        <div class="footer-derechos">
+                 <h4>2026 &copy; Todos los derechos reservados.</h4>
+                <img src="logo_udemex.jpg" alt="Logo de la empresa" width="50" height="50">
+        </div>
+        <div class="footer-contacto">
+                
+                <h4>Unidad 2 - Simulación de Dashboard Empresarial</h4>
+                <p> Alumno: Arturo Barbosa Martinez<br>
+                Matrícula: udx102410018<br>
+                Asesor: Katya Yarira Garduno Paz</p>
+        </div>
+        <div class="footer-redes">
+                    <h4>Redes sociales:</h4>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+                    </div>
+                       
+        </div>
+        
+    </footer>
+
+
+</body>
+</html>
