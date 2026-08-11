@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Panel empresarial para monitorear ventas, inventario y empleados">
+  <title>Panel Empresarial Interactivo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand" aria-label="Nexo empresarial">
+        <span class="brand-mark">N</span>
+        <span class="brand-name">Nexo</span>
+      </div>
+
+      <nav aria-label="Navegación principal">
+        <p class="nav-label">MENÚ PRINCIPAL</p>
+        <button class="nav-item active" data-view="resumen" aria-current="page">
+          <span class="nav-icon">▦</span><span>Resumen</span>
+        </button>
+        <button class="nav-item" data-view="ventas">
+          <span class="nav-icon">↗</span><span>Ventas</span>
+        </button>
+        <button class="nav-item" data-view="inventario">
+          <span class="nav-icon">□</span><span>Inventario</span>
+          <span class="nav-badge">3</span>
+        </button>
+        <button class="nav-item" data-view="empleados">
+          <span class="nav-icon">♙</span><span>Empleados</span>
+        </button>
+      </nav>
+
+      <div class="sidebar-help">
+        <span class="help-icon">?</span>
+        <strong>¿Necesitas ayuda?</strong>
+        <small>Consulta la guía del panel</small>
+      </div>
+    </aside>
+
+    <div class="main-area">
+      <header class="topbar">
+        <button id="menuButton" class="icon-button menu-button" aria-label="Abrir menú" aria-expanded="false">☰</button>
+        <div>
+          <p class="eyebrow">CENTRO DE OPERACIONES</p>
+          <h1 id="pageTitle">Resumen ejecutivo</h1>
+        </div>
+        <div class="topbar-actions">
+          <label class="search-box">
+            <span aria-hidden="true">⌕</span>
+            <span class="sr-only">Buscar en el inventario</span>
+            <input id="searchInput" type="search" placeholder="Buscar producto..." autocomplete="off">
+            <kbd>Ctrl K</kbd>
+          </label>
+          <button id="refreshButton" class="refresh-button" title="También puedes presionar la tecla R">
+            <span>↻</span> Actualizar datos
+          </button>
+          <button class="avatar" aria-label="Perfil de Laura Méndez">LM</button>
+        </div>
+      </header>
+
+      <main class="dashboard">
+        <section class="welcome-row">
+          <div>
+            <h2>Hola, Laura. Aquí está el pulso del negocio.</h2>
+            <p>Información simulada actualizada al <span id="lastUpdate">7 de agosto, 12:30</span>.</p>
+          </div>
+          <div class="period-filter" aria-label="Periodo de los datos">
+            <button data-period="7">7 días</button>
+            <button class="selected" data-period="30">30 días</button>
+            <button data-period="90">90 días</button>
+          </div>
+        </section>
+
+        <section class="metric-grid" aria-label="Métricas clave">
+          <article class="metric-card sales-card" tabindex="0" data-detail="ventas">
+            <div class="metric-heading"><span class="metric-icon blue">$</span><span class="trend positive">↗ 12.4%</span></div>
+            <p>VENTAS TOTALES</p>
+            <h3 id="salesValue">$284,650</h3>
+            <small>vs. $253,220 periodo anterior</small>
+          </article>
+          <article class="metric-card" tabindex="0" data-detail="pedidos">
+            <div class="metric-heading"><span class="metric-icon purple">▣</span><span class="trend positive">↗ 8.1%</span></div>
+            <p>PEDIDOS COMPLETADOS</p>
+            <h3 id="ordersValue">1,248</h3>
+            <small>94 pedidos pendientes</small>
+          </article>
+          <article class="metric-card" tabindex="0" data-detail="inventario">
+            <div class="metric-heading"><span class="metric-icon orange">□</span><span class="trend warning">3 alertas</span></div>
+            <p>VALOR DEL INVENTARIO</p>
+            <h3 id="inventoryValue">$1.24 M</h3>
+            <small>8,406 unidades disponibles</small>
+          </article>
+          <article class="metric-card" tabindex="0" data-detail="rendimiento">
+            <div class="metric-heading"><span class="metric-icon green">◎</span><span class="trend positive">↗ 4.6%</span></div>
+            <p>RENDIMIENTO DEL EQUIPO</p>
+            <h3 id="performanceValue">92.8%</h3>
+            <small>Promedio de 24 empleados</small>
+          </article>
+        </section>
+
+        <section class="content-grid">
+          <article class="panel chart-panel">
+            <div class="panel-header">
+              <div><p class="section-kicker">DESEMPEÑO COMERCIAL</p><h2>Ventas por mes</h2></div>
+              <button class="more-button" aria-label="Más opciones">•••</button>
+            </div>
+            <div class="chart-summary"><strong>$1,486,320</strong><span>Meta anual: 78% completada</span></div>
+            <div class="chart-wrap" aria-label="Gráfico de barras de ventas mensuales">
+              <div class="y-axis"><span>$300k</span><span>$200k</span><span>$100k</span><span>$0</span></div>
+              <div class="bars" id="salesChart"></div>
+            </div>
+            <p class="chart-hint">Pasa el cursor o haz clic en una barra para ver el detalle.</p>
+          </article>
+
+          <article class="panel goal-panel">
+            <div class="panel-header"><div><p class="section-kicker">OBJETIVO MENSUAL</p><h2>Meta de ventas</h2></div></div>
+            <div class="donut" aria-label="87 por ciento de la meta alcanzada"><span>87<small>%</small></span></div>
+            <strong>$284,650 de $327,000</strong>
+            <p>Faltan <b>$42,350</b> para alcanzar la meta.</p>
+            <div class="goal-legend"><span><i class="legend-dot achieved"></i>Alcanzado</span><span><i class="legend-dot remaining"></i>Restante</span></div>
+          </article>
+        </section>
+
+        <section class="lower-grid">
+          <article class="panel inventory-panel">
+            <div class="panel-header">
+              <div><p class="section-kicker">CONTROL DE EXISTENCIAS</p><h2>Inventario crítico</h2></div>
+              <button class="text-button" data-view-target="inventario">Ver inventario →</button>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>Producto</th><th>Categoría</th><th>Existencias</th><th>Estado</th></tr></thead>
+                <tbody id="inventoryTable"></tbody>
+              </table>
+              <p id="emptyMessage" class="empty-message">No se encontraron productos.</p>
+            </div>
+          </article>
+
+          <article class="panel employees-panel">
+            <div class="panel-header"><div><p class="section-kicker">TALENTO</p><h2>Mejor rendimiento</h2></div><button class="text-button" data-view-target="empleados">Ver equipo →</button></div>
+            <div id="employeeList" class="employee-list"></div>
+          </article>
+        </section>
+
+        <section id="viewDetails" class="view-details" aria-live="polite">
+          <button id="closeDetails" aria-label="Cerrar detalles">×</button>
+          <div id="detailContent"></div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <div id="tooltip" class="tooltip" role="tooltip"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite">Datos actualizados correctamente</div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
