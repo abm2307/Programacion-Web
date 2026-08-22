@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Organización de Psicólogos</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+        <!-- Estilos propios -->
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+
+<body>
+    <!-- BARRA DE NAVEGACIÓN -->
+<nav class="navbar navbar-expand-lg navbar-cmp sticky-top">
+
+    <div class="container">
+
+        <!-- LOGOTIPO / NOMBRE -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+
+            <div class="logo-circulo">
+                Ψ
+            </div>
+
+            <div class="ms-2">
+                <span class="nombre-cmp">
+                    Consejo Mexicano
+                </span>
+
+                <span class="subtitulo-cmp">
+                    DE PSICOLOGÍA
+                </span>
+            </div>
+
+        </a>
+
+
+        <!-- BOTÓN MENÚ MÓVIL -->
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal"
+                aria-expanded="false"
+                aria-label="Mostrar menú">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+        <!-- ENLACES -->
+        <div class="collapse navbar-collapse"
+             id="menuPrincipal">
+
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        Inicio
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="conocenos.html">
+                        Conócenos
+                    </a>
+                </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="directorio.html">
+                        Directorio de psicólogos
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="multimedia.html">
+                        Multimedia
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="publicaciones.html">
+                        Publicaciones
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">
+                        Contacto
+                    </a>
+                </li>
+
+                <!-- BOTÓN DE ACCIÓN -->
+                <li class="nav-item ms-lg-3">
+
+                    <a class="btn btn-afiliate"
+                       href="afiliate.html">
+                        Afíliate al CMP
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<!-- =========================
+     HERO DIRECTORIO
+========================= -->
+
+<section class="directorio-hero">
+
+    <div class="container py-5">
+
+        <div class="row">
+
+            <div class="col-lg-8 py-4">
+
+                <p class="seccion-etiqueta texto-claro">
+                    PROFESIONALES AFILIADOS
+                </p>
+
+                <h1 class="directorio-hero-titulo">
+                    Directorio Nacional de Psicólogos
+                </h1>
+
+                <p class="directorio-hero-descripcion">
+                    Encuentra profesionales afiliados y consulta
+                    información sobre especialidad, ubicación
+                    y modalidad de atención.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FILTROS
+========================= -->
+
+<section class="filtros-directorio">
+
+    <div class="container">
+
+        <div class="filtros-caja">
+
+            <div class="row g-3 align-items-end">
+
+                <!-- ESTADO -->
+                <div class="col-lg-3 col-md-6">
+
+                    <label for="filtroEstado"
+                           class="form-label">
+                        Estado
+                    </label>
+
+                    <select id="filtroEstado"
+                            class="form-select">
+
+                        <option value="">
+                            Todos
+                        </option>
+
+                        <option value="CDMX">
+                            Ciudad de México
+                        </option>
+
+                        <option value="Estado de México">
+                            Estado de México
+                        </option>
+
+                        <option value="Jalisco">
+                            Jalisco
+                        </option>
+
+                        <option value="Nuevo León">
+                            Nuevo León
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- ESPECIALIDAD -->
+                <div class="col-lg-3 col-md-6">
+
+                    <label for="filtroEspecialidad"
+                           class="form-label">
+                        Especialidad
+                    </label>
+
+                    <select id="filtroEspecialidad"
+                            class="form-select">
+
+                        <option value="">
+                            Todas
+                        </option>
+
+                        <option value="Clínica">
+                            Psicología clínica
+                        </option>
+
+                        <option value="Infantil">
+                            Psicología infantil
+                        </option>
+
+                        <option value="Pareja">
+                            Terapia de pareja
+                        </option>
+
+                        <option value="Organizacional">
+                            Psicología organizacional
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- MODALIDAD -->
+                <div class="col-lg-3 col-md-6">
+
+                    <label for="filtroModalidad"
+                           class="form-label">
+                        Modalidad
+                    </label>
+
+                    <select id="filtroModalidad"
+                            class="form-select">
+
+                        <option value="">
+                            Todas
+                        </option>
+
+                        <option value="Presencial">
+                            Presencial
+                        </option>
+
+                        <option value="Remota">
+                            Remota
+                        </option>
+
+                        <option value="Híbrida">
+                            Híbrida
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- BOTONES -->
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="d-flex gap-2">
+
+                        <button id="btnBuscar"
+                                class="btn btn-buscar flex-grow-1">
+                            Buscar
+                        </button>
+
+                        <button id="btnLimpiar"
+                                class="btn btn-outline-secondary">
+                            Limpiar
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     PROFESIONALES
+========================= -->
+
+<section class="profesionales py-5">
+
+    <div class="container">
+
+        <div class="d-flex justify-content-between
+                    align-items-center mb-4">
+
+            <div>
+
+                <p class="seccion-etiqueta mb-2">
+                    DIRECTORIO CMP
+                </p>
+
+                <h2 class="seccion-titulo mb-0">
+                    Profesionales
+                </h2>
+
+            </div>
+
+            <span id="resultadoConteo"
+                  class="badge resultado-badge">
+                6 profesionales
+            </span>
+
+        </div>
+
+
+        <div class="row g-4"
+             id="contenedorProfesionales">
+
+
+            <!-- PROFESIONAL 1 -->
+            <div class="col-lg-4 col-md-6 profesional"
+                 data-estado="CDMX"
+                 data-especialidad="Clínica"
+                 data-modalidad="Híbrida">
+
+                <div class="card psicologo-card h-100">
+
+                    <img src="imagenes/mujer-4.jpg"
+                         class="card-img-top"
+                         alt="Dra. Laura Martínez">
+
+                    <div class="card-body">
+
+                        <h4 class="card-title">
+                            Dra. Laura Martínez
+                        </h4>
+
+                        <p class="psicologo-especialidad">
+                            Psicología clínica
+                        </p>
+
+                        <p class="psicologo-info">
+                            Ciudad de México
+                        </p>
+
+                        <div class="mb-3">
+
+                            <span class="badge badge-cmp">
+                                Presencial
+                            </span>
+
+                            <span class="badge badge-cmp">
+                                Remota
+                            </span>
+
+                        </div>
+
+                        <p class="card-text">
+                            Atención a adultos, ansiedad,
+                            estrés y desarrollo emocional.
+                        </p>
+
+                        <a href="#"
+                           class="btn btn-perfil">
+                            Ver perfil
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROFESIONAL 2 -->
+            <div class="col-lg-4 col-md-6 profesional"
+                 data-estado="Estado de México"
+                 data-especialidad="Infantil"
+                 data-modalidad="Presencial">
+
+                <div class="card psicologo-card h-100">
+
+                    <img src="imagenes/hombre1.jpg"
+                         class="card-img-top"
+                         alt="Dr. Carlos Hernández">
+
+                    <div class="card-body">
+
+                        <h4 class="card-title">
+                            Dr. Carlos Hernández
+                        </h4>
+
+                        <p class="psicologo-especialidad">
+                            Psicología infantil
+                        </p>
+
+                        <p class="psicologo-info">
+                            Estado de México
+                        </p>
+
+                        <div class="mb-3">
+
+                            <span class="badge badge-cmp">
+                                Presencial
+                            </span>
+
+                        </div>
+
+                        <p class="card-text">
+                            Evaluación e intervención con
+                            niñas, niños y adolescentes.
+                        </p>
+
+                        <a href="#"
+                           class="btn btn-perfil">
+                            Ver perfil
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROFESIONAL 3 -->
+            <div class="col-lg-4 col-md-6 profesional"
+                 data-estado="Jalisco"
+                 data-especialidad="Pareja"
+                 data-modalidad="Híbrida">
+
+                <div class="card psicologo-card h-100">
+
+                    <img src="imagenes/mujer-1.jpg"
+                         class="card-img-top"
+                         alt="Mtra. Ana Sofía Ramírez">
+
+                    <div class="card-body">
+
+                        <h4 class="card-title">
+                            Mtra. Ana Sofía Ramírez
+                        </h4>
+
+                        <p class="psicologo-especialidad">
+                            Terapia de pareja
+                        </p>
+
+                        <p class="psicologo-info">
+                            Jalisco
+                        </p>
+
+                        <div class="mb-3">
+
+                            <span class="badge badge-cmp">
+                                Híbrida
+                            </span>
+
+                        </div>
+
+                        <p class="card-text">
+                            Atención a parejas, comunicación
+                            y resolución de conflictos.
+                        </p>
+
+                        <a href="#"
+                           class="btn btn-perfil">
+                            Ver perfil
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROFESIONAL 4 -->
+            <div class="col-lg-4 col-md-6 profesional"
+                 data-estado="Nuevo León"
+                 data-especialidad="Organizacional"
+                 data-modalidad="Remota">
+
+                <div class="card psicologo-card h-100">
+
+                    <img src="imagenes/hombre-3.jpg"
+                         class="card-img-top"
+                         alt="Mtro. Roberto Salgado">
+
+                    <div class="card-body">
+
+                        <h4 class="card-title">
+                            Mtro. Roberto Salgado
+                        </h4>
+
+                        <p class="psicologo-especialidad">
+                            Psicología organizacional
+                        </p>
+
+                        <p class="psicologo-info">
+                            Nuevo León
+                        </p>
+
+                        <div class="mb-3">
+
+                            <span class="badge badge-cmp">
+                                Remota
+                            </span>
+
+                        </div>
+
+                        <p class="card-text">
+                            Desarrollo de talento, liderazgo
+                            y bienestar organizacional.
+                        </p>
+
+                        <a href="#"
+                           class="btn btn-perfil">
+                            Ver perfil
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROFESIONAL 5 -->
+            <div class="col-lg-4 col-md-6 profesional"
+                 data-estado="CDMX"
+                 data-especialidad="Pareja"
+                 data-modalidad="Remota">
+
+                <div class="card psicologo-card h-100">
+
+                    <img src="imagenes/mujer-5.jpg"
+                         class="card-img-top"
+                         alt="Dra. Patricia León">
+
+                    <div class="card-body">
+
+                        <h4 class="card-title">
+                            Dra. Patricia León
+                        </h4>
+
+                        <p class="psicologo-especialidad">
+                            Terapia de pareja
+                        </p>
+
+                        <p class="psicologo-info">
+                            Ciudad de México
+                        </p>
+
+                        <div class="mb-3">
+
+                            <span class="badge badge-cmp">
+                                Remota
+                            </span>
+
+                        </div>
+
+                        <p class="card-text">
+                            Terapia de pareja y acompañamiento
+                            en procesos familiares.
+                        </p>
+
+                        <a href="#"
+                           class="btn btn-perfil">
+                            Ver perfil
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROFESIONAL 6 -->
+            <div class="col-lg-4 col-md-6 profesional"
+                 data-estado="Estado de México"
+                 data-especialidad="Clínica"
+                 data-modalidad="Híbrida">
+
+                <div class="card psicologo-card h-100">
+
+                    <img src="imagenes/hombre2.jpg"
+                         class="card-img-top"
+                         alt="Dr. Miguel Torres">
+
+                    <div class="card-body">
+
+                        <h4 class="card-title">
+                            Dr. Miguel Torres
+                        </h4>
+
+                        <p class="psicologo-especialidad">
+                            Psicología clínica
+                        </p>
+
+                        <p class="psicologo-info">
+                            Estado de México
+                        </p>
+
+                        <div class="mb-3">
+
+                            <span class="badge badge-cmp">
+                                Híbrida
+                            </span>
+
+                        </div>
+
+                        <p class="card-text">
+                            Atención psicológica para adultos
+                            y procesos de cambio personal.
+                        </p>
+
+                        <a href="#"
+                           class="btn btn-perfil">
+                            Ver perfil
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- MENSAJE SIN RESULTADOS -->
+
+        <div id="sinResultados"
+             class="alert alert-light text-center mt-4 d-none">
+
+            No se encontraron profesionales con esos criterios.
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer class="footer-cmp">
+
+    <div class="container py-5">
+
+        <div class="row g-4">
+
+            <!-- COLUMNA 1: IDENTIDAD -->
+            <div class="col-lg-4 col-md-6">
+
+                <div class="d-flex align-items-center mb-3">
+
+                    <div class="footer-logo">
+                        Ψ
+                    </div>
+
+                    <div class="ms-3">
+
+                        <h4 class="footer-nombre">
+                            Consejo Mexicano
+                        </h4>
+
+                        <span class="footer-subtitulo">
+                            DE PSICOLOGÍA
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <p class="footer-descripcion">
+                    Fortalecemos el ejercicio profesional de la
+                    psicología mediante comunidad, ética y
+                    actualización continua.
+                </p>
+
+            </div>
+
+
+            <!-- COLUMNA 2 -->
+            <div class="col-lg-2 col-md-6">
+
+                <h5 class="footer-titulo">
+                    Explora
+                </h5>
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="#conocenos">
+                            El Consejo
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#directorio">
+                            Directorio nacional
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#publicaciones">
+                            Publicaciones
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- COLUMNA 3 -->
+            <div class="col-lg-2 col-md-6">
+
+                <h5 class="footer-titulo">
+                    Participa
+                </h5>
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="#afiliate">
+                            Afiliación personal
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#afiliate">
+                            Afiliación institucional
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contacto">
+                            Contacto
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- COLUMNA 4 -->
+            <div class="col-lg-4 col-md-6">
+
+                <h5 class="footer-titulo">
+                    Contacto
+                </h5>
+
+                <p class="footer-contacto">
+                    Ciudad de México, México
+                </p>
+
+                <p class="footer-contacto">
+                    contacto@cmp.org.mx
+                </p>
+
+                <p class="footer-nota">
+                    Datos demostrativos sujetos a validación institucional.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- PARTE INFERIOR -->
+    <div class="footer-inferior">
+
+        <div class="container text-center">
+
+            <p class="mb-0">
+                © 2026 Consejo Mexicano de Psicología ·
+                Aviso de privacidad ·
+                Uso responsable de datos
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+<script>
+
+    const filtroEstado =
+        document.getElementById("filtroEstado");
+
+    const filtroEspecialidad =
+        document.getElementById("filtroEspecialidad");
+
+    const filtroModalidad =
+        document.getElementById("filtroModalidad");
+
+    const btnBuscar =
+        document.getElementById("btnBuscar");
+
+    const btnLimpiar =
+        document.getElementById("btnLimpiar");
+
+    const profesionales =
+        document.querySelectorAll(".profesional");
+
+    const resultadoConteo =
+        document.getElementById("resultadoConteo");
+
+    const sinResultados =
+        document.getElementById("sinResultados");
+
+
+    function filtrarProfesionales() {
+
+        const estado = filtroEstado.value;
+        const especialidad = filtroEspecialidad.value;
+        const modalidad = filtroModalidad.value;
+
+        let visibles = 0;
+
+
+        profesionales.forEach(function(profesional) {
+
+            const estadoProfesional =
+                profesional.dataset.estado;
+
+            const especialidadProfesional =
+                profesional.dataset.especialidad;
+
+            const modalidadProfesional =
+                profesional.dataset.modalidad;
+
+
+            const coincideEstado =
+                estado === "" ||
+                estado === estadoProfesional;
+
+            const coincideEspecialidad =
+                especialidad === "" ||
+                especialidad === especialidadProfesional;
+
+            const coincideModalidad =
+                modalidad === "" ||
+                modalidad === modalidadProfesional;
+
+
+            if (coincideEstado &&
+                coincideEspecialidad &&
+                coincideModalidad) {
+
+                profesional.classList.remove("d-none");
+
+                visibles++;
+
+            } else {
+
+                profesional.classList.add("d-none");
+
+            }
+
+        });
+
+
+        resultadoConteo.textContent =
+            visibles + " profesionales";
+
+
+        if (visibles === 0) {
+
+            sinResultados.classList.remove("d-none");
+
+        } else {
+
+            sinResultados.classList.add("d-none");
+
+        }
+
+    }
+
+
+    btnBuscar.addEventListener(
+        "click",
+        filtrarProfesionales
+    );
+
+
+    btnLimpiar.addEventListener(
+        "click",
+        function() {
+
+            filtroEstado.value = "";
+            filtroEspecialidad.value = "";
+            filtroModalidad.value = "";
+
+            filtrarProfesionales();
+
+        }
+    );
+
+</script>
+</body>
+
+</html>
