@@ -1,0 +1,1218 @@
+/* =========================
+   BARRA DE NAVEGACIÓN
+========================= */
+
+.navbar-cmp {
+    background-color: #fbfaf6;
+    min-height: 78px;
+    border-bottom: 1px solid #e5e1d8;
+}
+
+
+/* LOGOTIPO */
+
+.logo-circulo {
+    width: 46px;
+    height: 46px;
+
+    border: 1px solid #c96c50;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #123f42;
+    font-size: 28px;
+    font-family: Georgia, serif;
+}
+
+
+/* NOMBRE CMP */
+
+.nombre-cmp {
+    display: block;
+    color: #0d5baf;
+    font-family: Georgia, serif;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+
+/* SUBTÍTULO */
+
+.subtitulo-cmp {
+    display: block;
+    color: #456062;
+    font-size: 9px;
+    letter-spacing: 3px;
+    margin-top: 4px;
+}
+
+
+/* LINKS */
+
+.navbar-cmp .nav-link {
+    color: #173b3d;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    margin: 0 7px;
+
+    transition: color 0.3s ease;
+}
+
+
+.navbar-cmp .nav-link:hover {
+    color: #c96c50;
+}
+
+
+/* BOTÓN AFÍLIATE */
+
+.btn-afiliate {
+    background-color: #123f42;
+    color: white;
+
+    padding: 11px 22px;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.btn-afiliate:hover {
+    background-color: #0b3032;
+    color: white;
+}
+
+.hero {
+    background-color: #fbfaf6;
+}
+
+
+/* CONTENEDOR PRINCIPAL */
+
+.hero-caja {
+    min-height: 500px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+
+/* COLUMNA DEL TEXTO */
+
+.hero-texto {
+    min-height: 500px;
+
+    display: flex;
+    align-items: center;
+
+    background-color: #fbfaf6;
+
+    padding: 45px 50px;
+}
+
+
+.hero-contenido {
+    max-width: 500px;
+}
+
+
+/* TEXTO SUPERIOR */
+
+.hero-etiqueta {
+    color: #b4563f;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 20px;
+}
+
+
+/* TÍTULO */
+
+.hero-titulo {
+    color: #123f42;
+    font-family: Georgia, serif;
+    font-size: 3.5rem;
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
+
+
+/* LÍNEA */
+
+.hero-linea {
+    width: 70px;
+    height: 3px;
+
+    background-color: #c96c50;
+
+    margin-bottom: 25px;
+}
+
+
+/* DESCRIPCIÓN */
+
+.hero-descripcion {
+    color: #30484a;
+
+    font-size: 1.1rem;
+
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+}
+
+
+/* BOTONES */
+
+.hero-botones {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    margin-bottom: 30px;
+}
+
+
+.btn-hero-principal {
+    background-color: #123f42;
+    color: white;
+
+    border: 2px solid #123f42;
+
+    padding: 12px 22px;
+
+    font-weight: 600;
+}
+
+
+.btn-hero-principal:hover {
+    background-color: #0b3032;
+    color: white;
+}
+
+
+.btn-hero-secundario {
+    background-color: transparent;
+    color: #123f42;
+    border: 1px solid #123f42;
+    padding: 12px 22px;
+    font-weight: 600;
+}
+
+
+.btn-hero-secundario:hover {
+    background-color: #123f42;
+    color: white;
+}
+
+
+/* BENEFICIOS */
+
+.hero-beneficios {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    font-size: 0.82rem;
+
+    color: #58696a;
+}
+
+
+/* =========================
+   IMAGEN
+========================= */
+
+.hero-imagen {
+    min-height: 500px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.hero-imagen img {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* TARJETA SOBRE LA IMAGEN */
+
+.hero-tarjeta {
+    position: absolute;
+
+    left: 30px;
+    bottom: 30px;
+
+    width: 270px;
+
+    padding: 20px;
+
+    background-color: rgba(18, 63, 66, 0.95);
+
+    border-left: 4px solid #c96c50;
+
+    color: white;
+}
+
+
+.hero-tarjeta h4 {
+    font-family: Georgia, serif;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+
+.hero-tarjeta p {
+    margin: 0;
+
+    font-size: 0.85rem;
+}
+/* ==================================
+   TÍTULOS GENERALES DE LAS SECCIONES
+================================== */
+
+.seccion-etiqueta {
+    color: #b4563f;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+
+.seccion-titulo {
+    color: #123f42;
+
+    font-family: Georgia, serif;
+
+    font-size: 3rem;
+
+    margin-bottom: 15px;
+}
+
+
+.seccion-descripcion {
+    color: #607072;
+
+    font-size: 1rem;
+}
+
+
+/* ==================================
+   EVENTOS
+================================== */
+
+.eventos {
+    background-color: #fbfaf6;
+}
+
+
+/* TARJETA DE EVENTO */
+
+.evento-card {
+    border: 1px solid #ddd8cf;
+
+    border-radius: 15px;
+
+    background-color: white;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+
+.evento-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 12px 25px
+                rgba(0, 0, 0, 0.08);
+}
+
+
+.evento-card .card-body {
+    padding: 27px;
+}
+
+
+/* FECHA */
+
+.evento-fecha {
+    min-width: 62px;
+    height: 70px;
+
+    border-radius: 50%;
+
+    background-color: #f8ebe6;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+.evento-fecha .dia {
+    color: #b4563f;
+
+    font-family: Georgia, serif;
+
+    font-size: 25px;
+    font-weight: bold;
+
+    line-height: 1;
+}
+
+
+.evento-fecha .mes {
+    color: #b4563f;
+
+    font-size: 10px;
+
+    margin-top: 5px;
+}
+
+
+/* TIPO DE EVENTO */
+
+.evento-tipo {
+    color: #b4563f;
+
+    font-size: 10px;
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 10px;
+}
+
+
+/* TÍTULO DEL EVENTO */
+
+.evento-titulo {
+    color: #123f42;
+
+    font-family: Georgia, serif;
+
+    font-size: 1.35rem;
+
+    line-height: 1.2;
+
+    margin-bottom: 12px;
+}
+
+
+/* INFORMACIÓN */
+
+.evento-info {
+    color: #657274;
+
+    font-size: 0.85rem;
+
+    margin-bottom: 18px;
+}
+
+
+/* ENLACE */
+
+.evento-link {
+    color: #b4563f;
+
+    font-size: 0.85rem;
+
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+
+.evento-link:hover {
+    color: #123f42;
+}
+
+
+/* ==================================
+   CONTROLES DEL CARRUSEL
+================================== */
+
+#carruselEventos {
+    padding-bottom: 55px;
+}
+
+
+/* FLECHA IZQUIERDA */
+
+#carruselEventos .carousel-control-prev {
+    left: -55px;
+    width: 40px;
+}
+
+
+/* FLECHA DERECHA */
+
+#carruselEventos .carousel-control-next {
+    right: -55px;
+    width: 40px;
+}
+
+
+/* CAMBIAMOS EL COLOR DE LAS FLECHAS */
+
+#carruselEventos .carousel-control-prev-icon,
+#carruselEventos .carousel-control-next-icon {
+    background-color: #123f42;
+
+    border-radius: 50%;
+
+    padding: 20px;
+
+    background-size: 50%;
+}
+
+
+/* INDICADORES */
+
+#carruselEventos .carousel-indicators {
+    bottom: 0;
+}
+
+
+#carruselEventos .carousel-indicators button {
+    background-color: #123f42;
+
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+}
+
+
+/* ==================================
+   SECCIÓN NÚMEROS
+================================== */
+
+.numeros {
+    background-color: #f2eee5;
+}
+
+
+.numeros-titulo {
+    font-size: 3.2rem;
+
+    line-height: 1.1;
+}
+
+
+.numeros-descripcion {
+    color: #364e50;
+
+    font-size: 1rem;
+
+    line-height: 1.7;
+
+    max-width: 530px;
+
+    margin-top: 30px;
+}
+
+
+.numeros-link {
+    color: #b4563f;
+
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+
+.numeros-link:hover {
+    color: #123f42;
+}
+
+
+/* TARJETAS DE NÚMEROS */
+
+.numero-card {
+    border: 0;
+
+    border-radius: 0;
+
+    background-color: #fbfaf6;
+
+    border-bottom: 3px solid #c96c50;
+}
+
+
+.numero-card .card-body {
+    padding: 30px;
+}
+
+
+.numero-card h3 {
+    color: #123f42;
+
+    font-family: Georgia, serif;
+
+    font-size: 2.8rem;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+
+.numero-card p {
+    color: #657274;
+
+    font-size: 0.85rem;
+
+    margin-bottom: 0;
+}
+
+/* ==================================
+   DIRECTORIO
+================================== */
+
+.directorio {
+    background-color: #fbfaf6;
+}
+
+
+.directorio-caja {
+    position: relative;
+
+    overflow: hidden;
+
+    background-color: #123f42;
+
+    color: white;
+
+    border-radius: 18px;
+
+    padding: 45px 50px;
+}
+
+
+/* SÍMBOLO DECORATIVO */
+
+.directorio-caja::after {
+    content: "Ψ";
+
+    position: absolute;
+
+    right: 220px;
+    top: -45px;
+
+    font-family: Georgia, serif;
+
+    font-size: 190px;
+
+    color: rgba(255, 255, 255, 0.05);
+
+    line-height: 1;
+}
+
+
+.directorio-caja h3 {
+    position: relative;
+    z-index: 1;
+
+    font-family: Georgia, serif;
+
+    font-size: 2rem;
+
+    margin-bottom: 15px;
+}
+
+
+.directorio-caja p {
+    position: relative;
+    z-index: 1;
+
+    margin-bottom: 0;
+
+    color: #e2e7e7;
+}
+
+
+/* BOTÓN */
+
+.btn-directorio {
+    position: relative;
+    z-index: 1;
+
+    background-color: #cd7055;
+
+    color: white;
+
+    padding: 14px 28px;
+
+    border: none;
+
+    font-weight: 600;
+}
+
+
+.btn-directorio:hover {
+    background-color: #b95e45;
+
+    color: white;
+}
+
+/* ==================================
+   AFILIACIÓN
+================================== */
+
+.afiliacion {
+    background-color: #cc7055;
+
+    color: white;
+}
+
+
+.afiliacion-etiqueta {
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 20px;
+}
+
+
+.afiliacion-titulo {
+    font-family: Georgia, serif;
+
+    font-size: 3.2rem;
+
+    line-height: 1.1;
+
+    margin-bottom: 20px;
+}
+
+
+.afiliacion-descripcion {
+    font-size: 1rem;
+
+    margin-bottom: 0;
+
+    max-width: 650px;
+}
+
+
+/* BOTÓN AFILIACIÓN */
+
+.btn-afiliacion {
+    background-color: #fbfaf6;
+
+    color: #123f42;
+
+    padding: 14px 28px;
+
+    border: 2px solid #fbfaf6;
+
+    font-weight: 700;
+}
+
+
+.btn-afiliacion:hover {
+    background-color: #123f42;
+
+    border-color: #123f42;
+
+    color: white;
+}
+
+/* ==================================
+   FOOTER
+================================== */
+
+.footer-cmp {
+    background-color: #0d3b3e;
+    color: white;
+}
+
+
+/* LOGOTIPO */
+
+.footer-logo {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #cc7055;
+    border-radius: 50%;
+
+    color: white;
+
+    font-family: Georgia, serif;
+    font-size: 28px;
+}
+
+
+/* NOMBRE */
+
+.footer-nombre {
+    font-family: Georgia, serif;
+
+    font-size: 1.3rem;
+    font-weight: bold;
+
+    margin-bottom: 2px;
+}
+
+
+.footer-subtitulo {
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    color: #d7e0df;
+}
+
+
+/* DESCRIPCIÓN */
+
+.footer-descripcion {
+    max-width: 390px;
+
+    color: #b9c8c8;
+
+    font-size: 0.9rem;
+
+    line-height: 1.7;
+}
+
+
+/* TÍTULOS */
+
+.footer-titulo {
+    font-size: 1rem;
+
+    font-weight: 700;
+
+    margin-bottom: 15px;
+}
+
+
+/* LINKS */
+
+.footer-links {
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+}
+
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+
+.footer-links a {
+    color: #b9c8c8;
+
+    text-decoration: none;
+
+    font-size: 0.9rem;
+
+    transition: color 0.3s ease;
+}
+
+
+.footer-links a:hover {
+    color: #cc7055;
+}
+
+
+/* CONTACTO */
+
+.footer-contacto {
+    color: #b9c8c8;
+
+    font-size: 0.9rem;
+
+    margin-bottom: 12px;
+}
+
+
+.footer-nota {
+    color: #9baead;
+
+    font-size: 0.7rem;
+
+    margin-top: 20px;
+}
+
+
+/* PARTE INFERIOR */
+
+.footer-inferior {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+    padding: 18px 0;
+
+    color: #9fb1b0;
+
+    font-size: 0.75rem;
+}
+
+
+/* ==================================
+   HERO PUBLICACIONES
+================================== */
+
+.publicaciones-hero {
+    position: relative;
+    overflow: hidden;
+    background-color: #154e50;
+    color: rgb(255, 255, 255);
+}
+
+
+.publicaciones-hero::after {
+    content: "Ψ";
+    position: absolute;
+    right: 6%;
+    top: -80px;
+    font-family: Georgia, serif;
+    font-size: 230px;
+    color: rgba(255, 255, 255, 0.06);
+}
+
+
+.publicaciones-hero-titulo {
+    position: relative;
+    z-index: 1;
+    font-family: Georgia, serif;
+    font-size: 3.4rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+
+.publicaciones-hero-descripcion {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+    color: #e1ebea;
+    line-height: 1.7;
+}
+
+
+/* ==================================
+   BIBLIOTECA
+================================== */
+
+.biblioteca {
+    background-color: #fbfaf6;
+}
+
+
+/* ==================================
+   CARDS PUBLICACIONES
+================================== */
+
+.publicacion-card {
+    border: 1px solid #d7d1c8;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.publicacion-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 12px 25px
+                rgba(0, 0, 0, 0.09);
+}
+
+
+/* PORTADA */
+
+.publicacion-portada {
+    min-height: 145px;
+
+    padding: 25px;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    color: white;
+}
+
+
+.portada-verde {
+    background-color: #376f6c;
+}
+
+
+.portada-terracota {
+    background-color: #c86e52;
+}
+
+
+.portada-olivo {
+    background-color: #929a7e;
+}
+
+
+.publicacion-numero {
+    font-family: Georgia, serif;
+
+    font-size: 1.3rem;
+
+    font-weight: bold;
+}
+
+
+/* CONTENIDO */
+
+.publicacion-card .card-body {
+    padding: 25px;
+}
+
+
+.publicacion-badge {
+    background-color: #eee8df;
+
+    color: #123f42;
+
+    margin-bottom: 15px;
+
+    font-weight: 500;
+}
+
+
+.publicacion-fecha {
+    color: #b4563f;
+
+    font-size: 0.75rem;
+
+    font-weight: 600;
+
+    margin-bottom: 8px;
+}
+
+
+.publicacion-card .card-title {
+    color: #123f42;
+
+    font-family: Georgia, serif;
+
+    font-size: 1.35rem;
+
+    line-height: 1.25;
+}
+
+
+.publicacion-card .card-text {
+    color: #617173;
+
+    font-size: 0.88rem;
+
+    line-height: 1.6;
+}
+
+
+.publicacion-link {
+    color: #b4563f;
+
+    font-size: 0.85rem;
+
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+
+.publicacion-link:hover {
+    color: #123f42;
+}
+
+
+/* ==================================
+   PAGINACIÓN
+================================== */
+
+.pagination {
+    gap: 5px;
+}
+
+
+.pagination .page-link {
+    color: #123f42;
+
+    border-color: #d5cec5;
+
+    background-color: white;
+
+    min-width: 42px;
+
+    text-align: center;
+}
+
+
+.pagination .page-link:hover {
+    background-color: #eee8df;
+
+    color: #b4563f;
+
+    border-color: #d5cec5;
+}
+
+
+.pagination .page-item.active .page-link {
+    background-color: #123f42;
+
+    border-color: #123f42;
+
+    color: white;
+}
+
+
+.pagination .page-item.disabled .page-link {
+    color: #9ba6a5;
+
+    background-color: #f5f2ec;
+}
+
+
+.archivo-info {
+    color: #718080;
+
+    font-size: 0.8rem;
+}
+
+
+
+/* RESPONSIVE */
+
+@media (max-width: 767px) {
+
+    .footer-cmp {
+        text-align: center;
+    }
+
+
+    .footer-cmp .d-flex {
+        justify-content: center;
+    }
+
+
+    .footer-descripcion {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+
+
+/* ==================================
+   RESPONSIVE
+================================== */
+
+@media (max-width: 767px) {
+
+    .publicaciones-hero-titulo {
+        font-size: 2.6rem;
+    }
+
+
+    .pagination {
+        flex-wrap: wrap;
+    }
+
+}
+
+
+/* ==================================
+   RESPONSIVE
+================================== */
+
+@media (max-width: 991px) {
+
+    .seccion-titulo {
+        font-size: 2.5rem;
+    }
+
+
+    .numeros-titulo {
+        font-size: 2.6rem;
+    }
+
+
+    #carruselEventos .carousel-control-prev {
+        left: 0;
+    }
+
+
+    #carruselEventos .carousel-control-next {
+        right: 0;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    .evento-card {
+        margin-bottom: 10px;
+    }
+
+
+    .seccion-titulo {
+        font-size: 2.2rem;
+    }
+
+
+    .numero-card .card-body {
+        padding: 22px;
+    }
+
+
+    .numero-card h3 {
+        font-size: 2.2rem;
+    }
+
+}
