@@ -1589,7 +1589,7 @@
 ================================== */
 
 .publicacion-card {
-    border: 1px solid #d7d1c8;
+    border: 1px solid var(--rosa-principal);
 
     border-radius: 10px;
 
