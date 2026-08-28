@@ -772,6 +772,53 @@
     color: white;
 }
 
+.btn-estatutos-link {
+    color: #464747;
+
+    background-color: transparent;
+
+    border: 1px solid #464747;
+
+    padding: 10px 20px;
+
+    font-weight: 600;
+
+    border-radius: 6px;
+
+    transition: all 0.3s ease;
+}
+
+
+.btn-estatutos-link:hover {
+    background-color: #464747;
+
+    color: white;
+
+    border-color: #464747;
+}
+
+/* ==================================
+   UBICACIÓN / MAPA
+================================== */
+
+.ubicacion {
+    background-color: #fbfaf8;
+}
+
+.mapa-cmp {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+}
+
+.mapa-cmp iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
 /* ==================================
    FOOTER
 ================================== */
@@ -1013,12 +1060,13 @@
 .consejo-descripcion {
     position: relative;
     z-index: 1;
-
-    max-width: 600px;
+    width: 100%;
+    max-width: none;
 
     color: #e5eeee;
 
     line-height: 1.7;
+    text-align: justify;
 }
 
 
@@ -2503,6 +2551,266 @@
 
     color: white;
 }
+
+
+/* ==================================
+   Estatutos CONTACTO
+================================== */
+
+.estatutos-hero {
+    position: relative;
+    overflow: hidden;
+
+    background-color: var(--gris-oscuro);
+
+    color: white;
+}
+
+
+.estatutos-hero::after {
+    content: "Ψ";
+
+    position: absolute;
+
+    right: 6%;
+    top: -80px;
+
+    font-family: Georgia, serif;
+
+    font-size: 230px;
+
+    color: rgba(255, 255, 255, 0.06);
+}
+
+
+.estatutos-hero-titulo {
+    position: relative;
+    z-index: 1;
+
+    font-family: Georgia, serif;
+
+    font-size: 3.5rem;
+
+    margin-bottom: 20px;
+}
+
+
+.estatutos-hero-descripcion {
+    position: relative;
+    z-index: 1;
+
+    max-width: 620px;
+
+    color: #e1ebea;
+
+    line-height: 1.7;
+}
+
+
+
+/* ==================================
+   DOCUMENTO ESTATUTOS
+================================== */
+
+.documento-estatutos,
+.articulos-estatutos {
+    background-color: #fbfaf8;
+}
+
+
+.estatuto-documento {
+    background-color: #464747;
+
+    color: white;
+
+    padding: 35px 40px;
+
+    border-radius: 12px;
+
+    border-left: 5px solid #d53e6d;
+}
+
+
+.estatuto-documento h2 {
+    font-family: Georgia, serif;
+
+    font-size: 2rem;
+
+    margin-bottom: 10px;
+}
+
+
+.estatuto-documento p {
+    color: #eeeeee;
+
+    margin-bottom: 0;
+}
+
+
+/* BOTONES */
+
+.btn-ver-estatuto {
+    background-color: #d53e6d;
+
+    border-color: #d53e6d;
+
+    color: white;
+
+    font-weight: 600;
+
+    padding: 11px 22px;
+}
+
+
+.btn-ver-estatuto:hover {
+    background-color: #b92f5a;
+
+    border-color: #b92f5a;
+
+    color: white;
+}
+
+
+.btn-descargar-estatuto {
+    background-color: white;
+
+    border: 1px solid white;
+
+    color: #464747;
+
+    font-weight: 600;
+
+    padding: 11px 22px;
+}
+
+
+.btn-descargar-estatuto:hover {
+    background-color: #f5e5eb;
+
+    color: #d53e6d;
+}
+
+
+/* ==================================
+   CAPÍTULOS
+================================== */
+
+.titulo-capitulo {
+    color: #464747;
+
+    font-family: Georgia, serif;
+
+    font-size: 1.65rem;
+
+    margin-bottom: 20px;
+
+    padding-bottom: 12px;
+
+    border-bottom: 2px solid #d53e6d;
+}
+
+
+.titulo-capitulo span {
+    display: block;
+
+    margin-top: 5px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 0.85rem;
+
+    font-weight: normal;
+
+    color: #777;
+}
+
+
+/* ==================================
+   ACCORDION BOOTSTRAP
+================================== */
+
+.articulos-estatutos .accordion-item {
+    border: 1px solid #ddd;
+
+    margin-bottom: 10px;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+}
+
+
+.articulos-estatutos .accordion-button {
+    background-color: white;
+
+    color: #464747;
+
+    font-weight: 600;
+
+    padding: 18px 22px;
+}
+
+
+.articulos-estatutos .accordion-button:hover {
+    background-color: #f5e5eb;
+
+    color: #d53e6d;
+}
+
+
+.articulos-estatutos .accordion-button:not(.collapsed) {
+    background-color: #f5e5eb;
+
+    color: #d53e6d;
+
+    box-shadow: none;
+}
+
+
+.articulos-estatutos .accordion-button:focus {
+    border-color: #d53e6d;
+
+    box-shadow: 0 0 0 0.2rem
+                rgba(213, 62, 109, 0.15);
+}
+
+
+/* CUERPO DEL ARTÍCULO */
+
+.articulos-estatutos .accordion-body {
+    padding: 25px 30px;
+
+    background-color: white;
+
+    color: #464747;
+
+    line-height: 1.8;
+
+    text-align: justify;
+}
+
+
+.articulos-estatutos .accordion-body li {
+    margin-bottom: 10px;
+}
+
+
+/* NOTA */
+
+.nota-articulo {
+    margin-top: 20px;
+
+    padding: 12px 15px;
+
+    background-color: #f5e5eb;
+
+    border-left: 3px solid #d53e6d;
+
+    font-size: 0.85rem;
+
+    color: #666;
+}
+
 
 
 /* ==================================
